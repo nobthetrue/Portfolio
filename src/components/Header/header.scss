@@ -1,0 +1,21 @@
+$light-font: black;
+$night-font: purple;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    .title {
+        font-weight: 100;
+        color: $light-font;
+    }
+    .nav-header {
+        .nav-cat {
+            margin: 0 20px;
+            text-decoration: none;
+        }
+    }
+
+
+}

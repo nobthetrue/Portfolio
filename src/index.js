@@ -7,6 +7,7 @@ import Error from './pages/Error';
 import './index.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Formation from './pages/Formation';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +16,7 @@ root.render(
       <Header/>
       <Routes>
         <Route path='/' element={<Accueil />} />
+        <Route path='/Formation' element={<Formation/>} />
         <Route path='/Contact' element={<Contact />} />
         <Route path='*' element={<Error/>} />
       </Routes>
