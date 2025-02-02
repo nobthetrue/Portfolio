@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Accueil from './pages/Accueil';
+import ProjectPage from './pages/Projet';
 import Contact from './pages/Contact';
 import Error from './pages/Error';
 import './index.css';
@@ -16,6 +17,7 @@ root.render(
       <Header/>
       <Routes>
         <Route path='/' element={<Accueil />} />
+        <Route path="/projet/:id" element={<ProjectPage />} />
         <Route path='/Formation' element={<Formation/>} />
         <Route path='/Contact' element={<Contact />} />
         <Route path='*' element={<Error/>} />

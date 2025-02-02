@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white; 
+  overflow: hidden;
+  z-index: 0;
+  position: relative; /* Ajoute cette propriété pour permettre au cercle de se positionner au-dessus */
+}
+
+.circle {
+  position: absolute; /* Cette propriété permet au cercle de sortir du conteneur */
+  width: calc(100vw + 250px); 
+  height: calc(100vw + 250px);
+  background-color: black; 
+  border-radius: 50%;
+  top: 50%; /* Place le cercle au centre du conteneur */
+  left: 50%; /* Place le cercle au centre du conteneur */
+  transform: translate(-50%, -50%); /* Ajuste le cercle pour qu'il soit parfaitement centré */
+}

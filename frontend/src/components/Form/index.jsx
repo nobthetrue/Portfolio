@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './index.scss'
 
 function Form() {
     const [formData, setFormData] = useState({

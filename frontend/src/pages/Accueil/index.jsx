@@ -1,5 +1,12 @@
-function Accueil () {
-    return <h1>Ceci est mon portfolio</h1>
-}
+import Cercle from "../../components/Cercle";
+import CubeScene from "../../components/Cube";
+import './index.scss'
 
-export default Accueil
+export default function CircleScene() {
+  return (<div>
+    <Cercle/>
+    <CubeScene/>
+  </div>
+
+  );
+}
