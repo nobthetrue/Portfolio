@@ -1,3 +1,106 @@
 .body-accueil {
-    height: 100vh;
+    .intro-accueil {
+        margin: 150px 75px;
+        .first-p {
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+            .img-clavier {
+                width: 250px;
+                height: 250px;
+                border: solid 2px black;
+            }
+            .first-p-text {
+                padding-left: 30px;
+            }
+        }
+        .second-p {
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+            .img-pc {
+                width: 300px;
+                height: 250px;
+                border: solid 2px black;
+            }
+            .second-p-text {
+                padding-right: 30px;
+            }
+        }
+    }
+    .achievments-div {
+        background-color: black;
+        .achievments {
+            display: flex;
+            align-items: center;
+            padding: 30px 75px;
+            .achievments-text {
+                color: white;
+                margin-right: 30px;
+            }
+            .button-accueil {
+                border: none;
+                font-size: 20px;
+                color: white;
+                background-color: black;
+                padding: 15px;
+                height: 40%;
+                cursor: pointer;
+                &:hover {
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .body-accueil {
+        .intro-accueil {
+            display: flex;
+            flex-direction: column;
+            margin: 150px 25px 25px 25px;
+            .first-p {
+                flex-direction: column;
+                margin-bottom: 25px;
+                .img-clavier {
+                    width: 150px;
+                    height: 150px;
+                }
+                .first-p-text {
+                    padding-left: 0;
+                }
+            }
+            .second-p {
+                flex-direction: column-reverse;
+                margin-bottom: 0;
+                .img-pc {
+                    width: 200px;
+                    height: 150px;
+                    border: solid 2px black;
+                }
+                .second-p-text {
+                    padding-right: 0;
+                }
+            }
+        }
+        .achievments-div {
+            .achievments {
+                flex-direction: column;
+                padding: 25px;
+                .achievments-text {
+                    margin-right: 0;
+                }
+            }
+        }
+    }    
+}
+
+@media screen and (max-width: 465px) {
+    .body-accueil {
+        .intro-accueil {
+            margin: 250px 25px 25px 25px;
+        }
+    }
 }

@@ -1,5 +1,52 @@
 .projet-page {
-  height: 100vh;
+  .first-project {
+    padding: 75px 50px;
+    .kasa-all {
+      display: flex;
+      .text-kasa {
+        margin-right: 25px;
+      }
+      .kasa-repo-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .kasa {
+          border: solid 2px black;
+          width: 600px;
+          height: 220px;
+        }
+        .kasa-lien-repo {
+          margin-top: 20px;
+          color: black;
+        }
+      }
+    }
+  }
+  .second-project {
+    padding: 75px 50px;
+    .menu-maker-all {
+      display: flex;
+      .text-menu-maker {
+        margin-right: 25px;
+      }
+      .menu-maker-repo-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .menu-maker {
+          border: solid 2px black;
+          width: 600px;
+          height: 220px;
+        }
+        .menu-maker-lien-repo {
+          margin-top: 20px;
+          color: black;
+        }
+      }
+    }
+  }
 }
 
 .title-project {
@@ -8,7 +55,6 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    padding-top: 75px;
   }
   
   .typewriter {
@@ -26,4 +72,62 @@
       border-color: white;
     }
   }
-  
+
+@media screen and (max-width: 1150px) {
+  .projet-page {
+    .first-project {
+      padding: 75px 50px 25px 50px;
+      .kasa-all {
+        flex-direction: column;
+        .text-kasa {
+          margin-right: 0;
+        }
+        .kasa-repo-img {
+          margin-top: 20px;
+          .kasa {
+            width: 90vw;
+            height: 30vw;
+          }
+        }
+      }
+    }
+    .second-project {
+      padding: 25px 50px 25px 50px;
+      .menu-maker-all {
+        flex-direction: column;        
+        .text-menu-maker {
+          margin-right: 0;
+        }
+        .menu-maker-repo-img {
+          margin-top: 20px;
+          .menu-maker {
+            width: 90vw;
+            height: 30vw;
+          }
+        }
+      }
+    }
+  } 
+}
+
+@media screen and (max-width: 675px) {
+  .projet-page {
+    .first-project {
+      padding: 150px 25px 25px 25px;
+    }
+    .second-project {
+      padding: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .projet-page {
+    .first-project {
+      padding: 250px 15px 25px 15px;
+    }
+    .second-project {
+      padding: 25px 15px 25px 15px;
+    }
+  }
+}
