@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 import "./index.scss";
 
 const textArray = ["projet", "project", "progetto", "proyecto"];
-const typingSpeed = 100;
-const erasingSpeed = 50;
+const typingSpeed = 150;
+const erasingSpeed = 75;
 const newTextDelay = 2000;
 
 function ProjectPage() {
-  const { id } = useParams();
+  // const { id } = useParams();
   const [text, setText] = useState("");
   const [textArrayIndex, setTextArrayIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
@@ -35,11 +35,11 @@ function ProjectPage() {
   }, [charIndex, isDeleting, textArrayIndex]);
 
   return (
-    <div>
+    <div className="projet-page">
       <h1 className="title-project">
-        .<span className="typewriter">{text}</span>{id}
+        .<span className="typewriter">{text}</span>
       </h1>
-      <p>Détails du projet {id} ici...</p>
+      <p>Détails du projet ici...</p>
     </div>
   );
 }

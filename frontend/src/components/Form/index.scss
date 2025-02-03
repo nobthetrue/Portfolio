@@ -1,0 +1,126 @@
+.first-div-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 75px;
+    width: 100%;
+    z-index: 0;
+    .div-form {
+        width: 50%;
+        .form-title {
+            font-weight: 500;
+        }
+        .form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .form-info {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                margin-bottom: 40px;
+                .form-name {
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+                    margin: 40px 10px 40px 0;
+                    font-size: larger;
+                    label {
+                        margin-bottom: 20px;
+                    }
+                    input {
+                        padding: 10px;
+                    }
+                }
+                .form-email {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 40px 0 40px 10px;
+                    width: 50%;
+                    font-size: larger;
+                    label {
+                        margin-bottom: 20px;
+                    }
+                    input {
+                        padding: 10px;
+                    }
+
+                }
+            }
+            .form-message {
+                display: flex;
+                flex-direction: column;
+                margin: 0 10px;
+                width: 100%;
+                font-size: larger;
+                margin-bottom: 40px;
+                label {
+                    margin-bottom: 20px;
+                }
+                textarea {
+                    padding: 20px;
+                }
+            }
+            .form-button {
+                border: none;
+                background-color: white;
+                cursor: pointer;
+                padding: 10px 30px;
+                &:hover {
+                    background-color: black;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .first-div-form {
+        margin-top: 150px;
+        .div-form {
+            width: 75%;
+            .form {
+                .form-info {
+                    flex-direction: column;
+                    .form-name, .form-email {
+                        margin: 10px 0 10px 0;
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .first-div-form {
+        margin-top: 175px;
+        .div-form {
+            width: 85%;
+        }
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .first-div-form {
+        margin-top: 250px;
+        .form-title {
+            font-size: 25px;
+            margin: 25px;
+        }
+        .div-form {
+            .form {
+                .form-info {
+                    flex-direction: column;
+                    .form-name, .form-email {
+                        margin: 10px 0 10px 0;
+                        width: 60%;
+                    }
+                }
+            }
+        }
+    }
+}

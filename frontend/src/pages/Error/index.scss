@@ -1,0 +1,26 @@
+.error-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    .error-title {
+        font-size: 10vw;
+    }
+    .error-link {
+        text-decoration: none;
+        padding: 0 7px 0 0;
+        color: black;
+        font-weight: 600;
+        &:hover {
+            border-bottom: solid 2px black;
+            border-right: solid 3px black;
+        }
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .error-page {
+        margin-top: 100px ;
+    }
+}
