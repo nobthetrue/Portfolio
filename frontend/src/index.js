@@ -17,9 +17,9 @@ root.render(
       <Header/>
       <Routes>
         <Route path='/' element={<Accueil />} />
-        <Route path="/Projet" element={<ProjectPage />} />
+        <Route path="/projet" element={<ProjectPage />} />
         {/* <Route path='/Formation' element={<Formation/>} /> */}
-        <Route path='/Contact' element={<Contact />} />
+        <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<Error/>} />
       </Routes>
       <Footer/>
