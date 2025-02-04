@@ -11,7 +11,7 @@ function Accueil () {
 
       <div className='first-p'>
 
-        <img className='img-clavier' src='/Photoclavier.jpg' alt='Clavier'/>
+        <img className='img-clavier' src='./Photoclavier.jpg' alt='Clavier'/>
 
         <div className='first-p-text'> 
           <p>Bienvenue sur mon portfolio je m'appelle Gianni Cavanna. Je suis actuellement en fin de formation sur <a href="https://openclassrooms.com/fr/" >OpenClassrooms</a> et je recherche activement du travail 
