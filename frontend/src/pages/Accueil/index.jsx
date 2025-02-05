@@ -14,17 +14,17 @@ function Accueil () {
         <img className='img-clavier' src='./Photoclavier.jpg' alt='Clavier'/>
 
         <div className='first-p-text'> 
-          <p>Bienvenue sur mon portfolio je m'appelle Gianni Cavanna. Je suis actuellement en fin de formation sur <a href="https://openclassrooms.com/fr/" >OpenClassrooms</a> et je recherche activement du travail 
+          <p>Bienvenue sur mon portfolio, je m'appelle Gianni Cavanna. Je suis actuellement en fin de formation sur <a href="https://openclassrooms.com/fr/" >OpenClassrooms</a> et je recherche activement du travail 
           en tant que développeur web. </p>
-          <p>Le secteur de l'informatique est pour moi passionnant et en perpétuel évolution, c'est avant tout ce squi me motive le plus car j'aime
-          me dépasser et obtenir de nouvelles compétences.</p>
+          <p>Le secteur de l'informatique est pour moi passionnant et en perpétuelle évolution, c'est avant tout ce qui me motive le plus car j'aime
+          me dépasser et acquérir de nouvelles compétences.</p>
         </div>
 
       </div>
 
       <div className='second-p'>
-        <p className='second-p-text'>Le travail de mes rêves serait d'être dans les IA, qui sont pour moi l'avenir de tout ce qui nous entour. Cependant j'aimerais me faire 
-          de l'expérience en tant que développeur frontend car j'adore mettre en forme le visuel pour avoir un résultat moderne et fonctionnel.
+        <p className='second-p-text'>Le travail de mes rêves serait d'être dans l'IA, qui est pour moi l'avenir de tout ce qui nous entoure. Cependant, j'aimerais me faire 
+          de l'expérience en tant que développeur frontend car j'adore mettre en forme le visuel pour obtenir un résultat moderne et fonctionnel.
         </p>
         <img src='./Ordinateur.jpg' className='img-pc' alt='PC' />
       </div>
@@ -35,9 +35,9 @@ function Accueil () {
     <div className='achievments-div'>
         <div className='achievments'>
           <p className='achievments-text'>Au cours de ma formation j'ai réalisé des projets très intéressants qui m'ont permis d'acquérir de nombreuses
-             compétences. Grâce à celle-ci, je possède maintenant les bases du développement web (HTML, CSS, javascript, React, Node.js,...) mais 
+             compétences. Grâce à celles-ci, je possède maintenant les bases du développement web (HTML, CSS, javascript, React, Node.js,...) mais 
              je sais aussi m'organiser et m'adapter à différentes méthodes de travail (Pomodoro, Agile, Scrum,...)<br/>
-             A travers tout cela, je suis fier de ce que j'ai accompli si vous voulez en apprendre plus sur mes projets je vous invite à clique sur
+             À travers tout cela, je suis fier de ce que j'ai accompli. Si vous voulez en apprendre plus sur mes projets, je vous invite à cliquer sur
              le bouton juste à côté </p>  
              <button type='button' className="button-accueil" onClick={() => navigate("/Projet")}>Mes projets juste ici !</button>
         </div>
